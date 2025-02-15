@@ -1,1 +1,1 @@
-export * from './error-registry.service';
+export * from './exception-registry.service';

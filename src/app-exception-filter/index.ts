@@ -1,1 +1,1 @@
-export * from './global-app-exception.filter';
+export * from './app-exception.filter';
