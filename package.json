@@ -15,6 +15,23 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "keywords": [
+    "nestjs",
+    "exception",
+    "error-handling",
+    "nestjs-exception",
+    "nestjs-errors",
+    "global-exception",
+    "nestjs-error-handler",
+    "custom-exceptions",
+    "error-logger",
+    "nestjs-middleware",
+    "nestjs-module",
+    "nestjs-error-middleware",
+    "nestjs-http-exception",
+    "nestjs-global-error",
+    "nestjs-error-management"
+  ],
   "scripts": {
     "prepare": "yarn build",
     "build": "nest build",
