@@ -1,5 +1,7 @@
 # @webxsid/nest-exception
 
+![Coverage](https://codecov.io/gh/webxsid/nest-exception/branch/main/graph/badge.svg)
+
 A centralized exception handling module for NestJS applications. It provides structured error management, logging, and automatic exception handling.
 
 ## Features

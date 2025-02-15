@@ -5,13 +5,21 @@
   "author": "Siddharth Mittal <hello@webxsid.com>",
   "private": false,
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/**/*"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
+    "prepare": "yarn build",
     "build": "nest build",
+    "prepublishOnly": "yarn test",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "echo 'No main entry file. This package is meant for modular imports.' && exit 1",
-    "start:dev": "echo 'No main entry file. This package is meant for modular imports.' && exit 1",
-    "start:debug": "echo 'No main entry file. This package is meant for modular imports.' && exit 1",
-    "start:prod": "echo 'No main entry file. This package is meant for modular imports.' && exit 1",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:unit": "jest --testPathPattern=src",

@@ -16,6 +16,11 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "noFallthroughCasesInSwitch": false,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "strict": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true
+  },
 }
