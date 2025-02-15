@@ -1,6 +1,9 @@
 # @webxsid/nest-exception
 
 ![Coverage](https://codecov.io/gh/webxsid/nest-exception/branch/main/graph/badge.svg)
+[![Test & Coverage](https://github.com/webxsid/nest-exception/actions/workflows/test-covergare.yml/badge.svg)](https://github.com/webxsid/nest-exception/actions/workflows/test-covergare.yml)
+[![NPM Version](https://img.shields.io/npm/v/@webxsid/nest-exception)](https://www.npmjs.com/package/@webxsid/nest-exception)
+[![License](https://img.shields.io/github/license/webxsid/nest-exception)](LICENSE)
 
 A centralized exception handling module for NestJS applications. It provides structured error management, logging, and automatic exception handling.
 
