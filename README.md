@@ -78,21 +78,23 @@ export class AppModule {}
 
 ### Registering the Global Exception Filter
 
-- Add the `AppExceptionFilter` globally in your main bootstrap file:
+To apply the `AppExceptionFilter` globally in your application, register it in your root module (`AppModule`):
 
 ```typescript
-// main.ts
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+// app.module.ts
+import { Module } from '@nestjs/common';
+import { APP_FILTER } from '@nestjs/core';
 import { AppExceptionFilter } from '@webxsid/nest-exception';
 
-async function bootstrap() {
-    const app = await NestFactory.create(AppModule);
-    app.useGlobalFilters(new AppExceptionFilter());
-    await app.listen(3000);
-}
-
-bootstrap();
+@Module({
+    providers: [
+        {
+            provide: APP_FILTER,
+            useClass: AppExceptionFilter,
+        },
+    ],
+})
+export class AppModule {}
 ```
 
 ## Error Management

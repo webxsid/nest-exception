@@ -62,6 +62,7 @@ export class AppExceptionModule implements OnModuleInit {
     return {
       module: AppExceptionModule,
       global: true,
+      imports: options.imports || [],
       providers: [
         asyncProvider,
         {

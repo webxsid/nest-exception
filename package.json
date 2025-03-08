@@ -1,6 +1,6 @@
 {
   "name": "@webxsid/nest-exception",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A centralized exception handling module for NestJS applications. It provides structured error management, logging, and automatic exception handling.",
   "author": "Siddharth Mittal <hello@webxsid.com>",
   "private": false,
